@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#button-bell {
+    margin-top: 10px;
+    background-color: #e9a6633d;
+    height: 34px;
+    width: 31px;
+    padding: 0%;
+}
+
+#button-mess {
+    margin-left: 22px;
+    margin-top: 10px;
+    background-color: #7da8702a;
+    height: 34px;
+    width: 31px;
+    padding: 0%;
+}
+
+#icon-bell {
+    color: #E9A763;
+}
+
+#icon-mess {
+    color: #7DA870;
+}
