@@ -11,164 +11,180 @@
     font-family: 'Red Hat Display', sans-serif;
 } */
 
-#button-bell {
-    margin-top: 10px;
-    background-color: #e9a6633d;
-    height: 34px;
-    width: 31px;
-    padding: 0%;
-}
+/* Botones */
+    #button-bell {
+        margin-top: 10px;
+        background-color: #e9a6633d;
+        height: 34px;
+        width: 31px;
+        padding: 0%;
+    }
 
-#button-mess {
-    margin-top: 10px;
-    background-color: #7da8702a;
-    height: 34px;
-    width: 31px;
-    padding: 0%;
-}
+    #button-mess {
+        margin-top: 10px;
+        background-color: #7da8702a;
+        height: 34px;
+        width: 31px;
+        padding: 0%;
+    }
 
-#icon-bell {
-    color: #E9A763;
-}
+    #button-book {
+        background-color: #99cf899c;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        height: 55px;
+        width: 50px;
+        padding: 0.2%;
+    }
 
-#icon-mess {
-    color: #7DA870;
-}
+    #button-book:hover {
+        background-color: #99cf89;
+        box-shadow: 0px 15px 20px #99cf89;
+        color: #fff;
+        transform: translateY(-7px);
+    }
 
-.sidebar-title {
-    margin-top: 25%;
-    justify-content: center;
-}
+    #button-create {
+        width: 130px;
+        padding: 0%;
+        font-size: 15px;
+        font-weight: 500;
+        color: #ffffff;
+        background-color: #99cf899c;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        margin-top: 50%;
+    }
 
-#button-book {
-    background-color: #99cf899c;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    height: 55px;
-    width: 50px;
-    padding: 0.2%;
-}
+    #button-create:hover {
+        background-color: #99cf89;
+        box-shadow: 0px 15px 20px #99cf89;
+        color: #fff;
+        transform: translateY(-7px);
+    }
 
-#button-book:hover {
-    background-color: #99cf89;
-    box-shadow: 0px 15px 20px #99cf89;
-    color: #fff;
-    transform: translateY(-7px);
-}
+    #button-create:active {
+        transform: translateY(-1px);
+    }
 
-#book {
-    color: #FFF;
-}
+    #button-look {
+        background-color: #7da8702a;
+        height: 34px;
+        width: 100px;
+        padding: 0%;
+        border-radius: 22px;
+        margin-bottom: 5%;
+    }
 
-.sidebar-sticky {
-    background-color: #7DA870;
-}
+/* Iconos */
+    #icon-bell {
+        color: #E9A763;
+    }
 
-.menu-items {
-    margin-top: 10%;
-    justify-content: center;
-    text-align: center;
-}
+    #icon-mess {
+        color: #7DA870;
+    }
 
-.menu-item {
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-    color: #FFF;
-}
+    #ion-t {
+        margin-left: 25%;
+    }
 
-#button-create {
-    width: 130px;
-    padding: 0%;
-    font-size: 15px;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: #99cf899c;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    margin-top: 50%;
-}
+    #input-search {
+        background-color: rgba(128, 128, 128, 0.116);
+    }
 
-#button-create:hover {
-    background-color: #99cf89;
-    box-shadow: 0px 15px 20px #99cf89;
-    color: #fff;
-    transform: translateY(-7px);
-}
+    #book {
+        color: #FFF;
+    }
 
-#button-create:active {
-    transform: translateY(-1px);
-}
+    .look {
+        color: #7da870d8;
+    }
 
-#ion-t {
-    margin-left: 25%;
-}
+/* Imagenes */
+    .perfil {
+        width: 50px;
+        border-radius: 13px;
+    }
 
-.sidebar-content {
-    justify-content: center;
-}
+    #img-card {
+        height: 310px;
+    }
 
-.sidebar-btn {
-    display: flex;
-    justify-content: center;
-}
+/* Sidebar */
+    .sidebar-title {
+        margin-top: 25%;
+        justify-content: center;
+    }
 
-#input-search {
-    background-color: rgba(128, 128, 128, 0.116);
-}
+    .sidebar-sticky {
+        background-color: #7DA870;
+    }
 
-#contenedor2 {
-    border-radius:60px;
-}
+    .sidebar-content {
+        justify-content: center;
+    }
 
-#img-card {
-    height: 310px;
-}
+    .sidebar-btn {
+        display: flex;
+        justify-content: center;
+    }
 
-.contenedorLateral {
-    margin-top: 60px;
-    border-radius: 18px;
-    padding: 5%;
-    background-color: rgba(128, 124, 124, 0.144);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+    .menu-item {
+        margin-top: 10%;
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+        color: #FFF;
+    }
 
-.tituloLateral {
-    font-size: 22px;
-}
+/* Contenedores y navbar */
+    #contenedor2 {
+        border-radius:60px;
+    }
 
-#button-look {
-    background-color: #7da8702a;
-    height: 34px;
-    width: 100px;
-    padding: 0%;
-    border-radius: 22px;
-}
+    .contenedorLateral {
+        margin-top: 60px;
+        border-radius: 18px;
+        padding: 5%;
+        background-color: rgba(128, 124, 124, 0.144);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 
-.look {
-    color: #7da870d8;
-}
+    .tituloLateral {
+        font-size: 25px;
+        margin-bottom: 8%;
+    }
 
-.nav-1 {
-    margin-left: -4%;
-}
+    .nav-1 {
+        margin-left: -4%;
+    }
 
-.navbar-start {
-    margin-top: 3%;
-}
+    .navbar-start:hover {
+        color: #0000009d;
+    }
 
-.navbar-start:hover {
-    color: #0000009d;
-}
+    .nav-2 {
+        color:gray;
+    }
 
-.nav-2 {
-    color:gray;
-}
+    .divContainer {
+        padding: 3%;
+        width: 100px;
+        height: 85px;
+        background-color: #FFF;
+        border-radius: 12px;
+        border: 1.5px solid rgba(116, 115, 115, 0.719);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+    }
 
-.perfil {
-    width: 50px;
-    border-radius: 13px;
-}
+    .containerNotifications {
+        border-radius: 18px;
+        padding: 5%;
+        background-color: rgba(128, 124, 124, 0.144);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
