@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: 'Red Hat Display', sans-serif;
+} */
+
 #button-bell {
     margin-top: 10px;
     background-color: #e9a6633d;
@@ -11,7 +20,6 @@
 }
 
 #button-mess {
-    margin-left: 22px;
     margin-top: 10px;
     background-color: #7da8702a;
     height: 34px;
@@ -25,4 +33,142 @@
 
 #icon-mess {
     color: #7DA870;
+}
+
+.sidebar-title {
+    margin-top: 25%;
+    justify-content: center;
+}
+
+#button-book {
+    background-color: #99cf899c;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    height: 55px;
+    width: 50px;
+    padding: 0.2%;
+}
+
+#button-book:hover {
+    background-color: #99cf89;
+    box-shadow: 0px 15px 20px #99cf89;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#book {
+    color: #FFF;
+}
+
+.sidebar-sticky {
+    background-color: #7DA870;
+}
+
+.menu-items {
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-item {
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+}
+
+#button-create {
+    width: 130px;
+    padding: 0%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #99cf899c;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 50%;
+}
+
+#button-create:hover {
+    background-color: #99cf89;
+    box-shadow: 0px 15px 20px #99cf89;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#button-create:active {
+    transform: translateY(-1px);
+}
+
+#ion-t {
+    margin-left: 25%;
+}
+
+.sidebar-content {
+    justify-content: center;
+}
+
+.sidebar-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#input-search {
+    background-color: rgba(128, 128, 128, 0.116);
+}
+
+#contenedor2 {
+    border-radius:60px;
+}
+
+#img-card {
+    height: 310px;
+}
+
+.contenedorLateral {
+    margin-top: 60px;
+    border-radius: 18px;
+    padding: 5%;
+    background-color: rgba(128, 124, 124, 0.144);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tituloLateral {
+    font-size: 22px;
+}
+
+#button-look {
+    background-color: #7da8702a;
+    height: 34px;
+    width: 100px;
+    padding: 0%;
+    border-radius: 22px;
+}
+
+.look {
+    color: #7da870d8;
+}
+
+.nav-1 {
+    margin-left: -4%;
+}
+
+.navbar-start {
+    margin-top: 3%;
+}
+
+.navbar-start:hover {
+    color: #0000009d;
+}
+
+.nav-2 {
+    color:gray;
+}
+
+.perfil {
+    width: 50px;
+    border-radius: 13px;
 }
