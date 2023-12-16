@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
-/* body {
+body {
     font-family: 'Red Hat Display', sans-serif;
-} */
+}
 
 /* Botones */
     #button-bell {
@@ -30,7 +31,7 @@
 
     #button-book {
         background-color: #99cf899c;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.027);
         height: 55px;
         width: 50px;
         padding: 0.2%;
@@ -52,7 +53,7 @@
         background-color: #99cf899c;
         border: none;
         border-radius: 12px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.021);
         transition: all 0.3s ease 0s;
         cursor: pointer;
         outline: none;
@@ -93,7 +94,8 @@
     }
 
     #input-search {
-        background-color: rgba(128, 128, 128, 0.116);
+        border: 1px solid rgba(97, 97, 97, 0.103);
+        background-color: rgba(148, 148, 148, 0.116);
     }
 
     #book {
@@ -134,7 +136,6 @@
     }
 
     .menu-item {
-        margin-top: 10%;
         font-size: 15px;
         justify-content: center;
         text-align: center;
@@ -150,8 +151,8 @@
         margin-top: 60px;
         border-radius: 18px;
         padding: 5%;
-        background-color: rgba(128, 124, 124, 0.144);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(121, 104, 104, 0.123);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
     }
 
     .tituloLateral {
@@ -179,12 +180,22 @@
         border-radius: 12px;
         border: 1.5px solid rgba(116, 115, 115, 0.719);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin-right: 20px;
+        margin-right: 24px;
     }
 
     .containerNotifications {
         border-radius: 18px;
         padding: 5%;
-        background-color: rgba(128, 124, 124, 0.144);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgba(121, 104, 104, 0.123);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .containerAutors {
+        margin-top: 30px;
+        margin-right: 24px;
+        border-radius: 18px;
+        padding: 5%;
+        padding-bottom: 0%;
+        background-color: rgba(121, 104, 104, 0.123);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
     }

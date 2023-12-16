@@ -1,6 +1,6 @@
-function Card({ letterSpace, imagen, color, titulo, parrafo, infoBoton, colorTitulo, colorParrafo, colorBtn, parrafo3, fontBtn, widthBtn, fontSize, tamañoParrafo, parrafo2, marginTop }) {
+function Card({ letterSpace, imagen, color, titulo, parrafo, infoBoton, colorTitulo, colorParrafo, colorBtn, parrafo3, fontBtn, marginBottom, widthBtn, fontSize, tamañoParrafo, parrafo2, marginTop }) {
     return (
-        <div className="card card-image-cover flex flex-row max-w-full" style={{ backgroundColor: color, marginTop: marginTop }}>
+        <div className="card card-image-cover flex flex-row max-w-full" style={{ backgroundColor: color, marginTop: marginTop, marginBottom: marginBottom }}>
             <div className="card-body w-1/2 p-4">
                 <p className="titulo-card" style={{ letterSpacing: letterSpace,color: colorTitulo, fontSize: fontSize}}>{titulo}</p>
                 <p className="text-content2 mb-4" style={{ color: colorParrafo, fontSize: tamañoParrafo}}>{parrafo}</p>

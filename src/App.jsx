@@ -18,12 +18,12 @@ function App() {
   const fetchCharacters = (url) => {
     fetch(url)
       .then(response => response.json())
-      .then(data => setCharacters(data.results))
+      .then(data => setCharacters(data.results.slice(0, 3))); 
   };
 
   useEffect(() => {
-    fetchCharacters(initialUrl)
-  }, [])
+    fetchCharacters(initialUrl);
+  }, []);
 
   return (
     <>
@@ -49,52 +49,57 @@ function App() {
 
                 {/* Card 1 */}
                 <Card imagen="https://fastidious-bookkeeping-services.odoo.com/web_editor/shape/theme_bookstore/s_image_text.svg?c1=o-color-1" color="#E9A763" titulo="Hola, Andrés! Tienes ideas sobre un nuevo libro?" colorTitulo="#FFF"
-                  colorParrafo="#FFF" fontSize="20px" letterSpace="0.5px" parrafo="Vuelve tus libros tendencia mundial!" tamañoParrafo="17px" parrafo2="Quieres empezar a escribir una vez más?" infoBoton="Crear Borrador" colorBtn="#343A3F" fontBtn="15px" widthBtn="220px" marginTop="5%"/>
+                  colorParrafo="#FFF" fontSize="20px" letterSpace="0.5px" parrafo="Vuelve tus libros tendencia mundial!" tamañoParrafo="17px" parrafo2="Quieres empezar a escribir una vez más?" infoBoton="Crear Borrador" colorBtn="#343A3F" fontBtn="15px" widthBtn="220px" marginTop="5%" />
 
-                <div className="my-4 flex w-full gap-4">
+                <div className="flex w-full flex-row flex-wrap gap-4 p-1">
+                  <div className="my-4 flex w-full gap-4">
 
-                  {/* Contenedores de información */}
-                  <div className="flex flex-row w-full">
-                    <DivContainer titulo="Librería" cantidad="124" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
-                    <DivContainer titulo="Me Gusta" cantidad="155 k" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
-                    <DivContainer titulo="Lectores" cantidad="8 k" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
-                    <DivContainer titulo="Opiniones" cantidad="163 k" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
-                  </div>
-
-                  <div className="flex flex-col w-3/5">
-
-                    {/* Notificaciones */}
-                    <div className="containerNotifications">
-
-                      {/* Botón para ver todo */}
-                      <BtnLook titulo="Reciente" descripcion="Ver Todo" widthTitulo="130px"/>
-
-                      {/* Información de las notificaciones */}
-                      <DivNotifications titulo="Victoria Evans" parrafo='ha comentado en "La Ciudadela"' contenido="May 7"/>
-                      <div className="divider"></div>
-                      <DivNotifications titulo="Ethan Williams" parrafo='ha comentzado a seguirte' contenido="May 5"/>
-                      <div className="divider"></div>
-                      <DivNotifications titulo="Nathan Fox" parrafo='le ha gustado "Inolvidable"' contenido="May 1"/>
-                      <div className="divider"></div>
-                      <DivNotifications titulo="Megan Walsh" parrafo='ha comentzado a seguirte' contenido="April 29"/>
+                    <div className="flex flex-col w-4/5">
+                      <div className="flex ">
+                        <DivContainer titulo="Librería" cantidad="124" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
+                        <DivContainer titulo="Me Gusta" cantidad="155 k" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
+                        <DivContainer titulo="Lectores" cantidad="8 k" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
+                        <DivContainer titulo="Opiniones" cantidad="163 k" colorParrafo="#000" tamañoParrafo="22px" colorTitulo="#00009" fontSize="14px" />
                       </div>
+
+                      <div className="containerAutors">
+
+                        <BtnLook titulo="Autores" descripcion="Ver Todo" widthTitulo="380px"/>
+
+                        <Characters characters={characters} parrafo2="Lectores" parrafo3="143 k" colorTitulo="#000" colorParrafo="#00009" tamañoParrafo="15px" fontCant="18px" fontSize="18px"/>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col w-1/3" >
+
+                      <div className="containerNotifications">
+                        <BtnLook titulo="Reciente" descripcion="Ver Todo" widthTitulo="130px" />
+                        <DivNotifications titulo="Victoria Evans" parrafo='ha comentado en "La Ciudadela"' contenido="May 7" />
+                        <div className="divider"></div>
+                        <DivNotifications titulo="Ethan Williams" parrafo='ha comentzado a seguirte' contenido="May 5" />
+                        <div className="divider"></div>
+                        <DivNotifications titulo="Nathan Fox" parrafo='le ha gustado "Inolvidable"' contenido="May 1" />
+                        <div className="divider"></div>
+                        <DivNotifications titulo="Megan Walsh" parrafo='ha comentzado a seguirte' contenido="April 29" />
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 {/* Card 2 */}
                 <Card imagen="https://www.icfes.gov.co/documents/39286/47085/presaber11.svg/ad88b203-092b-b35d-6ea7-effdb0d15e19?version=1.0&t=1642288992967&imagePreview=1" color="#343A3F" titulo="Andrés, nos gusta tu contenido y queremos darte los siguientes tips:" colorTitulo="#FFF"
-                  colorParrafo="#FFF" fontSize="20px" letterSpace="0.5px" parrafo="1. Lee los comentarios de tus lectores." tamañoParrafo="17px" parrafo2="2. Elije el género que quieres para tu público." parrafo3="3. Busca siempre a un editor de confianza!" marginTop="1%"/>
+                  colorParrafo="#FFF" fontSize="20px" letterSpace="0.5px" parrafo="1. Lee los comentarios de tus lectores." tamañoParrafo="17px" parrafo2="2. Elije el género que quieres para tu público." parrafo3="3. Busca siempre a un editor de confianza!" marginTop="1%" marginBottom="2%"/>
               </div>
 
               <div className="flex flex-col w-1/3">
 
                 {/* Icono de notificación */}
-                <div className="btn" id="button-bell" style={{ position: 'absolute', top: 15, right: 287 }}>
+                <div className="btn" id="button-bell" style={{ position: 'absolute', top: 15, right: 280 }}>
                   <BellIcon className="h-5 w-5 text" id="icon-bell" />
                 </div>
 
                 {/* Icono de mensajes */}
-                <div className="btn" id="button-mess" style={{ position: 'absolute', top: 15, right: 236 }}>
+                <div className="btn" id="button-mess" style={{ position: 'absolute', top: 15, right: 230 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5" id="icon-mess">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                   </svg>
@@ -110,7 +115,7 @@ function App() {
                 <div className="contenedorLateral">
 
                   {/* Botón para ver todo */}
-                  <BtnLook titulo="Lo último" descripcion="Ver Todo" widthTitulo="200px"/>
+                  <BtnLook titulo="Lo último" descripcion="Ver Todo" widthTitulo="200px" />
 
                   {/* Menú: reciente-popular */}
                   <div className="navbar-start">
