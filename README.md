@@ -4,7 +4,7 @@
 
 1. Clona este repositorio
 ```
-git bull
+git pull
 https://github.com/SilviaJaimes/pruebaGrafosoft.git
 ```
 
